@@ -1,0 +1,19 @@
+.search-links {
+  display: block;
+  list-style: none;
+  float: left;
+  margin-left: 0;
+  padding-left: 0;
+}
+.search-link {
+  display: block;
+  float: left;
+  margin: 0 2px;
+  padding: 3px 5px;
+  font-size: 1.0em;
+  cursor: pointer;
+  font-weight: bold;
+}
+.search-link:hover{
+  background-color: #efefef;
+}

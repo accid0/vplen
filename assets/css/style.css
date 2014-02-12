@@ -1,0 +1,280 @@
+.flybox-body-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  z-index: 1000;
+}
+
+.postimage, .postvideo{
+  float: left !important;
+}
+
+#pf_mainpart{
+  min-height: 114px;
+  height: auto !important;
+}
+
+#postform #pf_mainpart .post-message textarea[name="message"]{
+  display: block;
+  float: left;
+  width: 90% !important;
+  height: 114px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /*Firefox 1-3*/
+  -webkit-box-sizing: border-box; /* Safari */
+  resize: vertical;
+}
+
+#pfattach{
+  float: right;
+  width: 10%;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.post-submit {
+  overflow: visible;
+}
+
+#postbtn {
+  display: inline-block;
+  float: right;
+  line-height: 100%;
+  font-size: 16px;
+  margin-top: 7px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+.post-submit #pfhdrleft{
+  float: right !important;
+  margin-right: 20px;
+}
+
+#pf_mainpart .post-message:after, #pf_mainpart .post-submit:after{
+  content: "";
+  clear: both;
+  float: none;
+  width: 100%;
+  display: block;
+}
+
+#pfattach .attachok{
+  display: none !important;
+}
+
+#pf_mainpart .post-message{
+  overflow: visible;
+  padding: 0;
+  margin: 0;
+}
+
+.attachbtn {
+  display: block !important;
+  margin: 4px 0 4px 10px;
+  padding: 0;
+  height: 1em;
+  cursor: pointer;
+  font-size: 0.9em;
+  line-height: 100%;
+}
+
+.attachbtn span.attach-title{
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(37, 34, 34, 0.33);
+}
+
+.attachbtn:hover span.attach-title {
+  color: rgba(43, 39, 39, 0.67);
+}
+
+#pfattach .attachbtn input[type="file"]{
+  border: 0px none currentColor;
+  box-sizing: border-box;
+  display: block !important;
+  height: 0px;
+  margin: 0px;
+  opacity: 0;
+  outline: 0px none currentColor;
+  padding: 0px;
+  width: 0px;
+}
+
+#dialogs_form #attachbtn_file, #dialogs_form #attachbtn_image, #dialogs_form #attachbtn_link, #dialogs_form #attachbtn_videoembed{
+  display: none !important;
+}
+
+#postform  {
+  margin-bottom: 10px;
+}
+
+.post-smileys {
+  display: none;
+  position: absolute;
+  width: 90px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  z-index: 1000;
+  cursor: default;
+}
+
+.post-smileys .post-smile{
+  cursor: pointer;
+  display: inline-block;
+}
+
+.smileys-btn:hover .post-smileys{
+  display: block;
+}
+
+#postform .upload-submit{
+  display: none;
+}
+
+.start-search {
+  margin: 0 auto;
+  width: 980px;
+}
+
+.search-group{
+  width: 900px;
+  margin: 0 20px;
+}
+
+.start-search .search-group #searchbostsleft {
+  width: 100%;
+  clear: left;
+  overflow: visible;
+  margin: auto;
+}
+
+.start-search .search-group input[type="submit"]{
+  background: url("../img/signup-btn.gif") repeat-x scroll 0 0 #DDDDDD;
+  border-color: #BBBBBB #BBBBBB #999999;
+  border-radius: 4px 4px 4px 4px;
+  border-style: solid;
+  color: #333333 !important;
+  cursor: pointer;
+  display: inline-block;
+  font: 12px/15px Helvetica Neue,Arial,"Lucida Grande",Sans-serif;
+  margin: 0;
+  overflow: hidden;
+  padding: 5px 9px;
+  text-shadow: 0 1px #F0F0F0;
+}
+
+.start-search .search-group input[type="text"] {
+  padding: 4px 1px;
+  margin: 2px 0;
+  outline: 0;
+  border: 1px solid rgba(43, 49, 49, 0.31);
+  box-sizing: border-box;
+}
+
+.start-search .search-group input[type="submit"]:hover, .start-search .search-group input[type="submit"]:focus {
+  background-position: 0 -7px;
+  color: #111111;
+}
+
+#search #searchinput {
+  box-sizing: border-box;
+}
+
+#search #searchbtn {
+  max-width: 10%;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+#search{
+  overflow: visible;
+}
+
+.start-search:after{
+  content: '';
+  display: block;
+  width: 100%;
+  float:none;
+  clear:both;
+}
+
+.post:hover .dropcontrols{
+  background-image: url('../img/dropcontrols.gif') !important;
+}
+
+.post .dropcontrols:hover{
+  background-image: url('../img/dropcontrols_phover.gif') !important;
+}
+
+#wholesite {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#site {
+  width: 940px !important;
+}
+
+#messages_info span {
+  color: #EC2018;
+  display: block;
+  margin: -18px 8px 0 0;
+  line-height: 100%;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+}
+
+#dbrd_tab_private {
+  color: #EC1818;
+  display: inline;
+  margin: 0 5px 0;
+  line-height: 100%;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.postbody .postftr .like-wrap{
+  display: inline;
+  float: right;
+}
+.postbody .postftr .like-wrap .like-state{
+  background-image: url('../img/likes/likes.png');
+  width: 21px;
+  height: 21px;
+  display: block;
+  float: left;
+}
+.postbody .postftr .like-wrap .like-button{
+  background-position: 3px 0px;
+}
+.postbody .postftr .like-wrap .like-button:hover,.postbody .postftr .like-wrap .like-button.checked {
+  background-position: -17px 0px;
+}
+.postbody .postftr .like-wrap .mlike-button{
+  background-position: 3px -21px;
+}
+.postbody .postftr .like-wrap .mlike-button:hover, .postbody .postftr .like-wrap .mlike-button.checked {
+  background-position: -17px -21px;
+}
+.postbody .postftr .like-wrap .dislike-button{
+  background-position: 3px -42px;
+}
+.postbody .postftr .like-wrap .dislike-button:hover, .postbody .postftr .like-wrap .dislike-button.checked {
+  background-position: -17px -42px;
+}
+.postbody .postftr .like-wrap .like-entity{
+  width: 21px;
+  height: 21px;
+  display: block;
+  float: left;
+}

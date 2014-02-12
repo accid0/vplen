@@ -1,0 +1,99 @@
+.flybox-next-wrapper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.flybox-next-wrapper:hover .flybox-next{
+  opacity: 1;
+}
+.flybox-next, .flybox-prev, .flybox-next:focus, .flybox-prev:focus{
+  display: inline-block;
+  opacity: 0;
+  background: transparent;
+  position: absolute;
+  bottom: 45%;
+  border: 0;
+  color: #A8A4A4 !important;
+  font-size: 30px; /*4.5em;*/
+  /*-webkit-transform: scaleX(0.5);*/
+  -webkit-transition: text-shadow 0.22s ease;
+  /*-moz-transform: scaleX(0.7);*/
+  -moz-transition: text-shadow 0.22s ease;
+  /*-o-transform: scaleX(0.7);*/
+  -o-transition: text-shadow 0.22s ease;
+  line-height: 100%;
+  text-shadow: 0 2px 2px rgba(255,255,255,0.7), 0 1px 10px rgba(0,0,0,0.5);
+  cursor: pointer;
+  outline: 0;
+}
+
+.flybox-next:disabled, .flybox-prev:disabled, .flybox-next:disabled:hover, .flybox-prev:disabled:hover{
+  color: rgba(206, 206, 206, 0.2) !important;
+  text-shadow: 0 2px 2px rgba(255,255,255,0.7), 0 1px 3px rgba(179, 179, 179, 0.35) !important;
+}
+
+.flybox-next:not(:active):hover, .flybox-prev:not(:active):hover{
+  text-shadow: 0 2px 2px rgba(255,255,255,0.7), 0 4px 4px rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
+.flybox-next:active:hover, .flybox-prev:active:hover{
+  text-shadow: 0 2px 2px rgba(255,255,255,0.7), 0 1px 4px rgba(0,0,0,0.5);
+  opacity: 1;
+  -webkit-transition: text-shadow 0.1s ease;
+  -moz-transition: text-shadow 0.1s ease;
+  -o-transition: text-shadow 0.1s ease;
+}
+
+.flybox-next{
+  top: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  text-align: right;
+  width: 100%;
+}
+
+.flybox-prev{
+  left: -10px;
+}
+
+.flybox-prev:before{
+  content:"◀";
+}
+
+.flybox-next:before{
+  content:"▶";
+}
+
+.flybox-prev:after{
+  content: "";
+  width: 100px;
+  height: 300px;
+  position: absolute;
+  display: block;
+  top: -200%;
+}
+
+.flybox-prev:after{
+  left:0;
+}
+
+.flyboxattachment, .flyboxdata{
+  margin: auto;
+  display: none;
+}
+
+.flybox-loader{
+  background-image: url(../img/loader_dark.gif);
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  bottom: 50%;
+}

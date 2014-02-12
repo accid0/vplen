@@ -1,0 +1,82 @@
+body{
+  margin: 0;
+  padding: 0 5px;
+  width: auto;
+  font-size: 1.1em
+}
+
+.logs{
+  margin: 0;
+  padding:0;
+}
+
+.logs .log-entity{
+  list-style: none;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.logs .log-entity .date{
+  font-size: 0.8em;
+  font-style: italic;
+  color: rgba(70, 7, 7, 0.93);
+  float: left;
+  margin: 0 25px;
+}
+
+.logs .log-entity .type{
+  float: none;
+  font-size: 1.1em;
+  font-style: italic;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.48);
+  padding: 5px 0;
+  -webkit-box-shadow: -3px 15px 10px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow:    -3px 15px 10px rgba(0, 0, 0, 0.48);
+  box-shadow:         -3px 15px 10px rgba(0, 0, 0, 0.48);
+}
+
+.logs .log-entity *[data-id^='warning']{
+  background-color: rgba(212, 138, 26, 0.41);
+}
+
+.logs .log-entity *[data-id^='notice']{
+  background-color: rgba(26, 212, 41, 0.41);
+}
+
+.logs .log-entity *[data-id^='strict']{
+  background-color: rgba(212, 208, 101, 0.42);
+}
+
+.logs .log-entity *[data-id^='fatal']{
+  background-color: rgba(207, 87, 20, 0.83);
+}
+
+.logs .log-entity *[data-id^='catchable fatal error']{
+  background-color: rgba(0, 31, 255, 0.59);
+}
+
+.logs .log-entity .message{
+  background-color: rgba(46, 42, 42, 0.25);
+  padding: 12px 5px 40px 5px;
+  line-height: 100%;
+  margin: 5px 0 0;
+}
+
+.logs .log-entity .file{
+  float: right;
+  color: rgba(0, 0, 0, 0.48);
+  font-weight: bolder;
+  font-size: 0.8em;
+  margin-right: 1em;
+}
+
+.logs .log-entity .line{
+  float: right;
+  margin-right: 1em;
+  font-size: 0.8em;
+  font-style: italic;
+  color: rgba(15, 33, 238, 0.79);
+
+}

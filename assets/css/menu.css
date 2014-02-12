@@ -1,0 +1,206 @@
+#main-menu{
+  margin: 50px;
+}
+
+.megamenu{
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  float: left;
+  clear: both;
+  position: relative;
+}
+
+.megamenu, .megamenu *{
+   z-index: 999;
+}
+
+.megamenu > .menu-entity{
+  list-style: none;
+  display: block;
+  float: left;
+  background-color:#dddddd;
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#dddddd, endColorstr=#e5e5e5);
+  background-image:-moz-linear-gradient(top, #dddddd 17%, #e5e5e5 26%,#efefef 41%,#f8f8f8 53%,#ffffff 66%);
+  background-image:linear-gradient(top, #dddddd 17%, #e5e5e5 26%,#efefef 41%,#f8f8f8 53%,#ffffff 66%);
+  background-image:-webkit-linear-gradient(top, #dddddd 17%, #e5e5e5 26%,#efefef 41%,#f8f8f8 53%,#ffffff 66%);
+  background-image:-o-linear-gradient(top, #dddddd 17%, #e5e5e5 26%,#efefef 41%,#f8f8f8 53%,#ffffff 66%);
+  background-image:-ms-linear-gradient(top, #dddddd 17%, #e5e5e5 26%,#efefef 41%,#f8f8f8 53%,#ffffff 66%);
+  background-image:-webkit-gradient(linear, right top, right bottom, color-stop(17%,#dddddd), color-stop(26%,#e5e5e5),color-stop(41%,#efefef),color-stop(53%,#f8f8f8),color-stop(66%,#ffffff));
+  -webkit-transition: all 0.22s ease-out 1.5s;
+  -moz-transition: all 0.22s ease-out 1.5s;
+  -o-transition: all 0.22s ease-out 1.5s;
+  transition: all 0.22s ease-out 1.5s;
+  cursor: pointer;
+  margin: 0 1px;
+}
+
+.megamenu > .menu-entity:last-child{
+  margin-right: 0;
+}
+
+.megamenu > .menu-entity:first-child{
+  margin-left: 0;
+}
+
+.megamenu .submenus{
+  padding: 0;
+  margin: 0;
+  width: 0;
+  height: 0px;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  background-color: transparent;
+  -webkit-transition: height,opacity 0.38s ease-out 0.05s;
+  -moz-transition: height,opacity 0.38s ease-out 0.05s;
+  -o-transition: height,opacity 0.38s ease-out 0.05s;
+  transition: height,opacity 0.38s ease-out 0.05s;
+  cursor: pointer;
+}
+
+.megamenu .submenus .submenu-entity{
+  width: 25%;
+  display: none;
+  float: left;
+}
+
+.megamenu .submenus > .submenu-wrapper{
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  position: absolute;
+  padding: 0 0 20px 0;
+}
+
+.megamenu .submenus > .submenu-wrapper > .submenu-column{
+  position: relative;
+  display: block;
+  margin: 20px 20px;
+}
+
+.megamenu > .clear-menu-entity{
+  clear:both;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.megamenu > .menu-entity .title-menu-entity{
+  text-transform: uppercase;
+  color: rgba(97, 97, 97, 0.82);
+  font-size: 0.8em;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-decoration: none;
+  padding: 10px 10px 0;
+  display: block;
+  overflow: hidden;
+  height: 90px;
+  width: 80px;
+}
+
+.megamenu > .menu-entity > .submenus .title-submenu-entity{
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 3% 0;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  border-bottom: 1px solid #aaa;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.megamenu > .menu-entity > .submenus .submenu-items{
+  margin: 0 10px;
+  padding: 0;
+}
+
+.megamenu > .menu-entity > .submenus .submenu-items > *{
+  list-style: none;
+}
+
+.megamenu > .menu-entity > .submenus .submenu-items .title-submenu-item-entity{
+  text-transform: capitalize;
+  color: rgba(97, 97, 97, 0.82);
+  font-size: 0.85em;
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  margin: 0;
+}
+
+.megamenu > .menu-entity > .submenus .submenu-entity:hover .title-submenu-entity
+, .megamenu > .menu-entity > .submenus .submenu-items .title-submenu-item-entity:hover{
+  background-color: #ddd;
+}
+
+.megamenu > .menu-entity .small-menu-entity{
+  font-size: 0.73em;
+}
+
+.megamenu:hover > .menu-entity{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.megamenu:hover > .menu-entity:hover{
+  background-color: #fff;
+}
+
+.megamenu:hover > .menu-entity:hover .title-menu-entity{
+  color: rgba(75, 68, 68, 0.94);
+}
+
+.megamenu:hover > .menu-entity:hover > .submenus{
+  height: auto;
+  padding: 2px 0;
+  opacity: 1;
+  width: 100%;
+}
+
+.megamenu:hover > .menu-entity:hover > .submenus .submenu-entity{
+  display: block;
+}
+
+.megamenu-modal{
+  position: absolute;
+  z-index: 998;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+  -webkit-transition: opacity 0.38s ease-out 0.05s;
+  -moz-transition: opacity 0.38s ease-out 0.05s;
+  -o-transition: opacity 0.38s ease-out 0.05s;
+  transition: opacity 0.38s ease-out 0.05s;
+}
+
+.megamenu:hover + .megamenu-modal{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.megamenu > .menu-entity a, .megamenu > .menu-entity a:visited{
+  display: block;
+  text-decoration: none;
+}
