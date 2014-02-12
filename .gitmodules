@@ -1,0 +1,6 @@
+[submodule "core"]
+	path = core
+	url = https://bitbucket.org/accidos/accido-fw.git
+[submodule "assets/js/uploader"]
+	path = assets/js/uploader
+	url = https://github.com/RubaXa/FileAPI.git
